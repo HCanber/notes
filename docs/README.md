@@ -1,3 +1,3 @@
-# Headline
+# Blog
 
-> An awesome project.
+> Perhaps in the future at least :)
