@@ -30,7 +30,7 @@ A few plugins have been installed as well:
 
   This is Tab 2
 
-  #### **Markdown code**
+  #### **Markdown**
 
   ```md
   <!-- tabs:start -->
@@ -61,10 +61,34 @@ A few plugins have been installed as well:
   Demo text
   ```
 
+- [marked-extended-tables](https://www.npmjs.com/package/marked-extended-tables)
+  A plugin for the markdown parser [Marked](https://marked.js.org/) to make it possible for cells in tables to span multiple columns or rows.
+  _Note!_ that this requires Marked to have been updated, see [this blog post](blog/2023-10-22-1-upgrade-marked-in-docsify.md).
+
+  <!-- tabs:start -->
+
+  #### **Example**
+
+  <!-- prettier-ignore -->
+  | H1      | H2      | H3      |
+  |---------|---------|---------|
+  | Cell 1  | Cell 2  | Cell 3  |
+  | This cell spans 3 columns |||
+
+  #### **Markdown**
+
+  <!-- prettier-ignore -->
+  ```md
+  | H1      | H2      | H3      |
+  |---------|---------|---------|
+  | Cell 1  | Cell 2  | Cell 3  |
+  | This cell spans 3 columns |||
+  ```
+
+  <!-- tabs:end -->
+
 - [Custom: Theme switcher](https://github.com/hcanber/notes/docs/plugins/docsify-plugin-theme-switcher.js)
-  Shows a button at the bottom of the menu to be able to switch between the light and dark theme.
-  It does this by enabling and disabling the `theme-simple` and `theme-simple-dark` css files.
-  See [index.html](https://github.com/hcanber/notes/docs/index.html)
+  Shows a button at the bottom of the menu to be able to switch between the light and dark theme. It does this by enabling and disabling the `theme-simple` and `theme-simple-dark` css files. See [index.html](https://github.com/HCanber/notes/blob/main/docs/index.html)
 
 - [Custom: View on GitHub](https://github.com/hcanber/notes/docs/plugins/docsify-plugin-theme-switcher.js)
   Shows a link at the top of the page to view the current page on GitHub. Like [docsify-edit-on-github](https://github.com/njleonzhang/docsify-edit-on-github) but with easier initialization, and css stylable.
