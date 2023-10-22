@@ -1,22 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: '',
-      repo: ''
-    }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Canberger</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Themes (light + dark) -->
+    <!-- To prevent flickering we always include the light theme first, and then the dark and light theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" />
+    <link
+      id="theme-dark"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    />
+    <link
+      id="theme-light"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"
+    />
+    <!-- Custom Styles -->
+    <style id="custom-theme">
+      :root {
+        --base-font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+        --strong-font-weight: 800;
+
+        --heading-font-weight: var(--strong-font-weight);
+        --heading-h1-font-weight: var(--strong-font-weight);
+        --heading-h2-font-weight: var(--strong-font-weight);
+        --heading-h2-padding: 0;
+
+        --code-font-size: calc(var(--font-size-m) * 0.8);
+        --kbd-box-shadow: inset 0 -1px 0 var(--kbd-box-shadow-color);
+        --kbd-box-shadow-color: var(--kbd-border-color);
+        --kbd-font-family: var(--code-font-family);
+        --kbd-font-size: 70%;
+        --kbd-min-width: auto;
+        --kbd-border: 1px solid var(--kbd-border-color);
+        --kbd-padding: 3px 5px;
+        --link-text-decoration: none;
+        --link-text-decoration--hover: underline;
+        --search-height: 2.5rem;
+        --search-margin-top: 1.5rem;
+        --search-margin: var(--search-margin-top) 0 0;
+        --sidebar-toggle-offset-top: calc(
+          var(--search-margin-top) + (var(--search-height) / 2) - (var(--sidebar-toggle-height) / 2)
+        );
+      }
+
+      [data-theme='light'] {
+        --mono-tint25: hsl(var(--mono-hue), var(--mono-saturation), 92%);
+        --base-color: var(--mono-shade2);
+
+        --code-inline-background: var(--mono-tint25);
+        --kbd-border-color: var(--mono-tint2);
+        --kbd-color: var(--mono-shade3);
+        --link-color: #1672ab;
+      }
+
+      [data-theme='dark'] {
+        --kbd-border-color: var(--mono-tint2);
+        --link-color: #64c0f9;
+      }
+
+      .github-corner {
+        display: none;
+      }
+      .markdown-section kbd {
+        font-family: var(--code-font-family);
+        box-shadow: var(--kbd-box-shadow);
+      }
+
+      .input-wrap {
+        height: var(--search-height);
+      }
+
+      .light-theme .dark-theme-only {
+        display: none;
+      }
+      .dark-theme .light-theme-only {
+        display: none;
+      }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="_media/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="_media/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="_media/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="_media/favicon/favicon.ico" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body class="dark-theme">
+    <div id="app">Loading...</div>
+    <script>
+      window.$docsify = {
+        // See: https://docsify.js.org/#/configuration
+        repo: 'https://github.com/HCanber/notes',
+        // docsify-copy-code
+        copyCode: {
+          buttonText: 'Copy',
+          errorText: 'Error',
+          successText: 'Copied',
+        },
+      }
+    </script>
+    <!-- Docsify v4: https://docsify.js.org/ -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="plugins/docsify-view-on-site.js"></script>
+    <script src="plugins/docsify-plugin-theme-switcher.js"></script>
+    <!-- docsify-themable: https://jhildenbiddle.github.io/docsify-themeable -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+    <!-- docsify-tabs: https://jhildenbiddle.github.io/docsify-tabs/ -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <!-- full text search: https://docsify.js.org/#/plugins?id=full-text-search -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- zoom image: https://docsify.js.org/#/plugins?id=zoom-image -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <!-- docsify-copy-code: https://github.com/jperasmus/docsify-copy-code -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  </body>
 </html>
