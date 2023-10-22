@@ -14,10 +14,10 @@ The site is deployed automatically on every push to the `main` branch using [Git
 
 A few plugins have been installed as well:
 
-- [docsify-themable](https://jhildenbiddle.github.io/docsify-themeable)<br>
+- [docsify-themable](https://jhildenbiddle.github.io/docsify-themeable)
   Makes it possible to have themes. I'm using the `theme-simple` and `theme-simple-dark` themes.
 
-- [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)<br>
+- [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
   Makes it possible to have tabs in the markdown.
   Example:
   <!-- tabs:start -->
@@ -48,25 +48,25 @@ A few plugins have been installed as well:
 
   <!-- tabs:end -->
 
-- [full text search](https://docsify.js.org/#/plugins?id=full-text-search)<br>
+- [full text search](https://docsify.js.org/#/plugins?id=full-text-search)
   The full text search up in the top left corner.
 
-- [zoom image](https://docsify.js.org/#/plugins?id=zoom-image)<br>
+- [zoom image](https://docsify.js.org/#/plugins?id=zoom-image)
   Opens images in a image viewer when clicked.
 
-- [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)<br>
+- [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
   Shows a copy button when hovering code blocks. Example:
 
   ```text
   Demo text
   ```
 
-- [Custom: Theme switcher](https://github.com/hcanber/notes/docs/plugins/docsify-plugin-theme-switcher.js)<br>
+- [Custom: Theme switcher](https://github.com/hcanber/notes/docs/plugins/docsify-plugin-theme-switcher.js)
   Shows a button at the bottom of the menu to be able to switch between the light and dark theme.
   It does this by enabling and disabling the `theme-simple` and `theme-simple-dark` css files.
   See [index.html](https://github.com/hcanber/notes/docs/index.html)
 
-- [Custom: View on GitHub](https://github.com/hcanber/notes/docs/plugins/docsify-plugin-theme-switcher.js)<br>
+- [Custom: View on GitHub](https://github.com/hcanber/notes/docs/plugins/docsify-plugin-theme-switcher.js)
   Shows a link at the top of the page to view the current page on GitHub. Like [docsify-edit-on-github](https://github.com/njleonzhang/docsify-edit-on-github) but with easier initialization, and css stylable.
 
 ## Custom styling
