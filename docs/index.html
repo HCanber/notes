@@ -97,7 +97,12 @@
   </head>
   <body class="dark-theme">
     <div id="app">Loading...</div>
+    <!-- The version of marked included by docsify is too old, so we include a newer version here -->
+    <script src="//cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
+
     <script>
+      let newMarked = marked
+
       window.$docsify = {
         // See: https://docsify.js.org/#/configuration
         repo: 'https://github.com/HCanber/notes',
@@ -108,8 +113,12 @@
           errorText: 'Error',
           successText: 'Copied',
         },
-        markdown: {
-          breaks: true,
+        markdown: function (originMarked, renderer) {
+          newMarked.use({
+            breaks: true,
+            renderer,
+          })
+          return newMarked.parse
         },
       }
     </script>
