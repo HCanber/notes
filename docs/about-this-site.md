@@ -69,15 +69,10 @@ A few plugins have been installed as well:
 - [Custom: View on GitHub](https://github.com/hcanber/notes/docs/plugins/docsify-plugin-theme-switcher.js)
   Shows a link at the top of the page to view the current page on GitHub. Like [docsify-edit-on-github](https://github.com/njleonzhang/docsify-edit-on-github) but with easier initialization, and css stylable.
 
+## Other changes
+
+- The markdown parser [Marked](https://marked.js.org/) has been upgraded to version 9. See [this blog post](blog/2023-10-22-1-upgrade-marked-in-docsify.md) for more info.
+
 ## Custom styling
 
 The themes have been modified slightly, and a few css variables have been tweaked. See the style tag with `id=custom-theme` in [index.html](https://github.com/hcanber/notes/docs/index.html)
-
-| x   | y   |
-| --- | --- |
-| a   | b   |
-
-| This header spans two || Header A |
-| columns _and_ two rows ^|| Header B |
-|-------------|------------|----------|
-| Cell A | Cell B | Cell C |
