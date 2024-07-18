@@ -4,6 +4,10 @@
 
 This is a guide on how to get started with a SAMD21 M0-Mini board. The board is a small development board with a [SAMD21 microcontroller from Microchip](https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/32bit-mcu/sam/samd21-mcu-overview/).
 ![SAMD21 M0-Mini](./images/samd21-mini.png)
+Some links:
+[Pinout](https://web.archive.org/web/20211202013911/https://robotdyn.com/pub/media/0G-00005516==SAMD21-MINI/DOCS/PINOUT==0G-00005516==SAMD21-MINI.pdf)
+[Schematic](https://web.archive.org/web/20210606165142/https://robotdyn.com/pub/media/0G-00005516==SAMD21-MINI/DOCS/Schematic==0G-00005516==SAMD21-MINI.pdf)
+[Size](https://web.archive.org/web/20211201235917/https://robotdyn.com/pub/media/0G-00005516==SAMD21-MINI/DOCS/DIM==0G-00005516==SAMD21-MINI.pdf)
 
 ## Arduino IDE - pre-requisites
 
